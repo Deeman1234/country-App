@@ -12,15 +12,17 @@ body{
      rgba(0,212,255,1)  100%);
 }
 .container{
-    background-color: #fff;
+    background-color: #ffffff;
     width: 80vw;
     max-width: 37.5em;
     padding: 3em 2.5em;
-    position: absolute;
-    transform: translate(-50%, -50%);
+    transform: translate(50%, 10%);
     top: 50%;
     left: 50%;
     border-radius: 0.62em;
+    justify-content: center;
+    overflow-y: auto;
+
 }
 .search-wrapper{
     display: grid;
@@ -42,7 +44,7 @@ body{
      border: none;
      border-bottom: 2px solid #3d64e6;
      outline: none;
-     color: #222a43;
+     color: #432233;
 }
 #result{
     margin-top: 1.25em;
@@ -56,7 +58,7 @@ body{
 }
 .container h2{
     font-weight: 600;
-    color: #222a43;
+    color: #432238;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -68,13 +70,16 @@ body{
 }
 
 .container h4{
-    display: inline;
+    display: flex;
     font-weight: 500;
-    color: #222a43;
+    color: #2b00ff;
+    justify-content: center;
 } 
 
 .container span{
-    color: #5d6274;
+    justify-content: center;
+    display: flex;
+    color: #e70000;
 }
 .container h3{
     text-align: center;

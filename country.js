@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function(){
             console.log(data);
 
             result.innerHTML = `
-              <img src="${data[0].flags.svg}" class="flag-img"  />
+              <img src="${data[0].flags.svg}" alt="flag" class="flag-img"  />
 
               <h2>${data[0].name.common}</h2>
  
@@ -44,6 +44,36 @@ document.addEventListener("DOMContentLoaded", function(){
                 </div>
               
               </div>
+
+              <div class="wrapper">
+                <div class="data-wrapper">
+                  <h4>coatofarms:</h4>
+                  <img src="${data[0].coatOfArms.svg}" class="flag-img"/>
+                </div>
+
+                </div>
+
+                <div class="wrapper">
+                <div class="data-wrapper">
+                  <h4>languages:</h4>
+                  <span>${data[0].languages}</span>
+                </div>
+
+                </div>
+
+                <div class="wrapper">
+                <div class="data-wrapper">
+                  <h4>currencies:</h4>
+                  <span>${data[0].currencies}</span>
+                </div>
+
+                </div>
+
+                <div class="wrapper">
+                <div class="data-wrapper">
+                  <h4>independent:</h4>
+                  <span>${data[0].independent}</span>
+                </div>
             
               `
         })
